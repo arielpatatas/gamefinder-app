@@ -17,12 +17,12 @@ export class AppComponent {
       icon: 'person'
     },
     {
-      title: 'Browse cramspot',
+      title: 'Browse Games and Consoles',
       url: '/home',
       icon: 'search'
     },
     {
-      title: 'List your space',
+      title: 'Post a product',
       url: '/list-workspace',
       icon: 'add-circle'
     },
@@ -47,26 +47,26 @@ export class AppComponent {
   ];
 
   public appPagesMore = [
-    {
-      title: 'How it Works',
-      url: '/how-it-works',
-      icon: 'settings'
-    },
-    {
-      title: 'About',
-      url: '/about',
-      icon: 'information-circle-outline'
-    },
-    {
-      title: 'Privacy Policy',
-      url: '/privacy-policy',
-      icon: 'lock'
-    },
-    {
-      title: 'Contact Us',
-      url: '/contactus',
-      icon: 'call'
-    }
+    // {
+    //   title: 'How it Works',
+    //   url: '/how-it-works',
+    //   icon: 'settings'
+    // },
+    // {
+    //   title: 'About',
+    //   url: '/about',
+    //   icon: 'information-circle-outline'
+    // },
+    // {
+    //   title: 'Privacy Policy',
+    //   url: '/privacy-policy',
+    //   icon: 'lock'
+    // },
+    // {
+    //   title: 'Contact Us',
+    //   url: '/contactus',
+    //   icon: 'call'
+    // }
   ];
   constructor(
     private platform: Platform,

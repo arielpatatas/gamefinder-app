@@ -35,7 +35,7 @@ export class NotificationPage implements OnInit {
         
 
         data.map(notif=>{
-          this.workspaceService.getWorkspaceById(notif.workspace_id)
+          this.workspaceService.getproductById(notif.workspace_id)
             .subscribe(workspace=>{
               return notif['workspace'] = workspace;
             });

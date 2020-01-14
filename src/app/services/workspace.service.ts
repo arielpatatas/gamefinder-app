@@ -9,34 +9,34 @@ export class WorkspaceService {
 
   constructor(private http: HttpClient) { }
 
-  postWorkspace(workspace){
-    return this.http.post(Api.URL+"workspace",workspace);
+  postWorkspace(product){
+    return this.http.post(Api.URL+"product",product);
   }
 
-  getWorkspace(){
-    return this.http.get(Api.URL+'workspace');
+  getproduct(){
+    return this.http.get(Api.URL+'product');
   }
-  getWorkspaceByDay(){
-    return this.http.get(Api.URL+'workspaceDay');
+  getWorkspaceByGames(){
+    return this.http.get(Api.URL+'tabgames');
   }
-  getWorkspaceByHour(){
-    return this.http.get(Api.URL+'workspaceHour');
-  }
-
-  getWorkspaceById(id){
-    return this.http.get(Api.URL+'workspace/'+id);
+  getWorkspaceByConsoles(){
+    return this.http.get(Api.URL+'tabconsoles');
   }
 
-  getWorkspaceByUserId(id):Observable<any[]>{
-    return this.http.get<any[]>(Api.URL+'workspace/user/'+id);
+  getproductById(id){
+    return this.http.get(Api.URL+'product/'+id);
   }
 
-  deleteWorkspace(workspace){
+  getproductByUserId(id):Observable<any[]>{
+    return this.http.get<any[]>(Api.URL+'product/user/'+id);
+  }
+
+  deleteWorkspace(product){
     return this.http.request('delete',Api.URL+'workspace',{
       headers: new HttpHeaders({
           'Content-Type': 'application/json'
       }),
-      body: workspace});
+      body: product});
   }
 
   postBookedWorkspace(booking){

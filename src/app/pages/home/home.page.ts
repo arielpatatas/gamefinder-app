@@ -33,22 +33,22 @@ export class HomePage implements OnInit {
 
   ngOnInit(){
     this.menuController.enable(true);
-    this.loadWorkspaceDay();
-    this.loadWorkspaceHour();
+    this.loadWorkspaceGames();
+    this.loadWorkspaceConsoles();
   }
   segmentChanged(ev: any) {
     this.ByGame=!this.ByGame;
     this.ByConsoles=!this.ByConsoles;
   }
 
-  loadWorkspaceDay(){
+  loadWorkspaceGames(){
    
-    this.workspaceService.getWorkspaceByDay().subscribe(data=>{
+    this.workspaceService.getWorkspaceByGames().subscribe(data=>{
       this.tabgamesByGame = data;
     });
   }
-  loadWorkspaceHour(){
-    this.workspaceService.getWorkspaceByHour().subscribe(data=>{
+  loadWorkspaceConsoles(){
+    this.workspaceService.getWorkspaceByConsoles().subscribe(data=>{
       this.tabconsolesByConsoles = data;
     });
   }

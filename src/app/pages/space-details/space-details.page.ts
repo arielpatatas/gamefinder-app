@@ -19,7 +19,7 @@ export class SpaceDetailsPage implements OnInit {
     }
 
   ngOnInit() {
-    this.workspaceService.getWorkspaceById(this.space_id).subscribe(data=>{ 
+    this.workspaceService.getproductById(this.space_id).subscribe(data=>{ 
       this.workspace = data;
     });
    

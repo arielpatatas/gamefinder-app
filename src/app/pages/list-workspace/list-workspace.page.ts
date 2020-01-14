@@ -81,7 +81,7 @@ export class ListWorkspacePage implements OnInit {
 
   async alertBack() {
     const alert = await this.alertController.create({
-      header: `You haven't post your workspace yet`,
+      header: `You haven't post your product yet`,
       message: 'Are you sure you want to go back to home?',
       buttons: [
         {
@@ -102,7 +102,7 @@ export class ListWorkspacePage implements OnInit {
     const alert = await this.alertController.create({
       header: 'Success',
       subHeader: 'Your post is uploading',
-      message: 'Wait for admin to verify your workspace.',
+      message: 'Wait for admin to verify your product.',
       buttons: [
         {
           text: 'Okay',

@@ -24,7 +24,7 @@ export class FeedModalPage implements OnInit {
     ) { }
 
   ngOnInit() {
-    this.workspaceService.getWorkspaceByUserId(this.auth.getDecodedToken().user_id)
+    this.workspaceService.getproductByUserId(this.auth.getDecodedToken().user_id)
     .subscribe(data=>{
       this.workspaces = data;
     });

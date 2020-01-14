@@ -14,8 +14,8 @@ export class AccountPage implements OnInit {
 
   workspaces:any[];
   showToolbar = false;
-  showList = true;
-  showBook = false;
+  showGames = true;
+  showConsoles = false;
   workspace_id;
   name:string;
   email:string;
@@ -34,7 +34,7 @@ export class AccountPage implements OnInit {
   }
 
   loadData(){
-    this.workspaceService.getWorkspaceByUserId(this.auth.getDecodedToken().user_id)
+    this.workspaceService.getproductByUserId(this.auth.getDecodedToken().user_id)
     .subscribe(data=>{
       this.workspaces = data;
     });
@@ -68,9 +68,9 @@ export class AccountPage implements OnInit {
   }
 
     segmentChanged(ev: any) {
-      console.log(this.showList, this.showBook)
-    this.showBook=!this.showBook;
-    this.showList=!this.showList;
+      console.log(this.showGames, this.showConsoles)
+    this.showConsoles=!this.showConsoles;
+    this.showGames=!this.showGames;
   }
      
   onScroll($event: CustomEvent<ScrollDetail>) {

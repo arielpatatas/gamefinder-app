@@ -7,7 +7,7 @@
         
 </ion-header> -->
 
-<div padding style="background-color:#903d62">
+<div padding style="background-color:#33dbdb">
       <!-- <ion-buttons slot="start" style="color:white">
         <ion-back-button defaultHref="/home"></ion-back-button>
       </ion-buttons> -->
@@ -15,7 +15,7 @@
         <ion-icon name="close"></ion-icon>
       </ion-button>
       <h1 text-center style="font-weight:bolder; color:white">
-          Let's start listing your cramspot
+          Let's start listing your Preloved Game/Console
       </h1>
       <br>
   </div>
@@ -25,17 +25,17 @@
     <form #f="ngForm" (ngSubmit)="post(f)">
       <div  [class.a]="a">
          <h4 style="font-weight:bolder;">
-              Tell us something about your workspace.
+              Tell us something about your Game/Console
           </h4>
           <br>
-            <ion-label position="stacked">Cramspot Name</ion-label>
+            <ion-label position="stacked">Product Name</ion-label>
             <ion-item class="input-style">
-              <ion-input name="title" ngModel placeholder="Enter your Cramspot's name"></ion-input>
+              <ion-input name="title" ngModel placeholder="Enter your Product's name"></ion-input>
             </ion-item>
             <br>
             <ion-label position="stacked">Description</ion-label>
             <ion-item class="input-style">
-              <ion-textarea name="description" ngModel placeholder="Type something about your cramspot..."></ion-textarea>
+              <ion-textarea name="description" ngModel placeholder="Type something about your Game/Console"></ion-textarea>
             </ion-item>   
             <br>
             <br>
@@ -53,36 +53,26 @@
               Back
             </ion-button>
             <h4 style="font-weight:bolder;">
-               What kind of workspace are you listing?
+               What kind of Product are you listing?
             </h4>
             <br>
             <ion-list>
                 <ion-radio-group name="type" ngModel>
-                  <ion-label position="stacked">Workspace Type</ion-label>
+                  <ion-label position="stacked">Product Type</ion-label>
                   
                   <ion-item>
-                    <ion-label>Coworking Space</ion-label>
-                    <ion-radio slot="start" value="Coworking Space" checked></ion-radio>
+                    <ion-label>Game</ion-label>
+                    <ion-radio slot="start" value="Game" checked></ion-radio>
                   </ion-item>
               
                   <ion-item>
-                    <ion-label>Corporate Office</ion-label>
-                    <ion-radio slot="start" value="Corporate Office"></ion-radio>
+                    <ion-label>Gaming Console</ion-label>
+                    <ion-radio slot="start" value="Gaming Console"></ion-radio>
                   </ion-item>
               
                   <ion-item>
-                    <ion-label>Startup Office</ion-label>
-                    <ion-radio slot="start" value="Startup Office"></ion-radio>
-                  </ion-item>
-
-                  <ion-item>
-                    <ion-label>Meeting Room</ion-label>
-                    <ion-radio slot="start" value="Meeting Room"></ion-radio>
-                  </ion-item>
-
-                  <ion-item>
-                    <ion-label>Empty Room</ion-label>
-                    <ion-radio slot="start" value="Empty Room"></ion-radio>
+                    <ion-label>Gaming Accesories</ion-label>
+                    <ion-radio slot="start" value="Gaming Accesories"></ion-radio>
                   </ion-item>
                 </ion-radio-group>
               </ion-list>
